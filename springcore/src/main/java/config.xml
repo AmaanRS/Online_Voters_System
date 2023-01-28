@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<context:component-scan
+		base-package="com.springcore.lyf" />
+
+	<bean class="com.springcore.Student" name="student1"
+		p:studentId="2" p:studentName="mn" p:studentAddress="MMMMMMMM" />
+
+
+	<bean class="com.springcore.collect.Emp" name="Emp22">
+		<property name="names">
+			<value>Mnn</value>
+		</property>
+		<property name="phones">
+			<list>
+				<value>9</value>
+				<value>7</value>
+				<value>6</value>
+			</list>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="c" value="amaan11"></entry>
+				<entry key="java" value="amaan14" />
+			</map>
+		</property>
+		<property name="student">
+			<ref bean="student1" />
+
+		</property>
+	</bean>
+
+	<bean class="com.springcore.lyf.ntmethods" name="ntm"
+		p:name="pppp" p:ress="new" />
+
+
+	<bean class="com.springcore.lyf.wred" name="ggg" p:name="pppp"
+		p:ress="new" />
+
+
+
+
+
+	<bean
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		name="ds">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/nw" />
+		<property name="username" value="root" />
+		<property name="password" value="Amaan@123" />
+	</bean>
+
+	<bean class="org.springframework.jdbc.core.JdbcTemplate"
+		name="jdbcTemplate">
+		<property name="dataSource">
+			<ref bean="ds" />
+		</property>
+
+
+	</bean>
+
+	<bean class="com.springcore.jdbc.StudentDaoImpl" name="studentD">
+		<property name="jdbcTemplate">
+			<ref bean="jdbcTemplate" />
+
+		</property>
+
+	</bean>
+
+
+
+
+
+
+</beans>

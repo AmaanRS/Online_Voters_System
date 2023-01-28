@@ -1,0 +1,40 @@
+package com.springcore.orm;
+
+import javax.sound.midi.Soundbank;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.springcore.orm.dao.studentDao;
+import com.springcore.orm.entities.Student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        studentDao studentDao = context.getBean("studentDao",studentDao.class);
+//        Student student = new Student(999,"rrr","mrrd");
+//        studentDao.insert(student);
+//        Student student = new Student(1,"rrr","mrrd");
+//      studentDao.insert(student);
+//        System.out.println("done");
+//        System.out.println(studentDao.getStudent(999));
+//        System.out.println("get");
+        
+        System.out.println(studentDao.getAllStudent());
+        Student student ;
+//        studentDao.updateStudent(student);
+        studentDao.delete(1);
+        System.out.println(studentDao.getAllStudent());
+
+        
+        
+        
+        
+    }
+}

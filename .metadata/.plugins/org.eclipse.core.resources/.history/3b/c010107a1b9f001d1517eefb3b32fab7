@@ -1,0 +1,8 @@
+package pj1.Model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Model {
+
+}

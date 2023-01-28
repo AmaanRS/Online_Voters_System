@@ -1,0 +1,28 @@
+package pj1.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pj1.Dao.voterDao;
+import pj1.Dao.VoterDao;
+import pj1.Model.voter;
+import pj1.Model.Voter;
+
+@Service
+public class VoterService {
+	
+	@Autowired
+	private VoterDao voterDao;
+	
+	public void createVoter(Voter voter) {
+
+		this.voterDao.voterSaveOrUpdate(voter);
+	}
+	
+	public void deleteVoter(Voter voter) {
+
+		int ID =voter.getVoterId();
+		this.voterDao.voterDelete(ID);
+	}
+
+}

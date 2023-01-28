@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;springmvc.UserDao&apos; to &apos;springmvc.dao&apos;&#x0A;- Original project: &apos;springmvc&apos;&#x0A;- Original element: &apos;springmvc/src/main/java/springmvc.UserDao&apos;&#x0A;- Renamed element: &apos;springmvc/src/main/java/springmvc.dao&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;springmvc.UserDao&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;springmvc.UserDao" name="springmvc.dao" qualified="false" references="true" stamp="1674482647512" textual="false" version="1.0"/>
+</session>

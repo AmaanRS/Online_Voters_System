@@ -1,0 +1,14 @@
+package pj1.Dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class Dao {
+	
+	public int candidateSaveOrUpdate()
+	{
+		
+		
+	}
+
+}
