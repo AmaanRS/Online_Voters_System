@@ -12,6 +12,7 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<tx:annotation-driven />
+	
 
 	<context:component-scan base-package="pj1" />
 	<bean
@@ -25,7 +26,8 @@
 		name="ds">
 		<property name="driverClassName"
 			value="com.mysql.cj.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/onlinevoter" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/onlinevoter" />
 		<property name="username" value="root" />
 		<property name="password" value="Amaan@123" />
 	</bean>
@@ -42,7 +44,9 @@
 		</property>
 		<property name="annotatedClasses">
 			<list>
-				<value>pj1.Model.ModelAdmin</value>
+				<value>pj1.Model.Admin</value>
+				<value>pj1.Model.Candidate</value>
+				<value>pj1.Model.Voter</value>
 			</list>
 		</property>
 	</bean>
@@ -55,6 +59,7 @@
 		name="transactionManager">
 		<property name="sessionFactory" ref="factory" />
 	</bean>
-	<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+	<bean name="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 
 </beans>

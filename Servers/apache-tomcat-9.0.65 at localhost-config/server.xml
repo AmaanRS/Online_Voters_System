@@ -117,8 +117,8 @@
 					directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b"
 					prefix="localhost_access_log" suffix=".txt" />
 
-				<!-- <Context docBase="springmvc" path="/springmvc"
-					reloadable="true" source="org.eclipse.jst.j2ee.server:springmvc" /> -->
+				 <Context docBase="springmvc" path="/springmvc"
+					reloadable="true" source="org.eclipse.jst.j2ee.server:springmvc" />
 				<Context docBase="pj1" path="/" reloadable="true"
 					source="org.eclipse.jst.j2ee.server:pj1" />
 			</Host>

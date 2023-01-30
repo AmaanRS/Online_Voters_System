@@ -1,0 +1,21 @@
+package pj1.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import pj1.Dao.AdminDao;
+import pj1.Dao.CandidateDao;
+import pj1.Model.Admin;
+import pj1.Model.Candidate;
+
+@Service
+public class AdminService {
+
+	@Autowired
+	private AdminDao adminDao;
+	
+	public void getAdmin(Admin admin) {
+
+		this.adminDao.candidateget(admin.getAdminId());
+	}
+}
