@@ -2,4 +2,5 @@
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:pj1" serverId="apache-tomcat-9.0.65 at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:springmvc" serverId="apache-tomcat-9.0.65 at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:pj1new" serverId="apache-tomcat-9.0.65 at localhost"/>
 </modules>

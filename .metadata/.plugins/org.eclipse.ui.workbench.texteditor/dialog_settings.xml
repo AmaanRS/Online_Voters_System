@@ -8,9 +8,12 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="candidate"/>
+			<item value="open"/>
+			<item value="update"/>
+			<item value="saveOrUpdate"/>
 			<item value="isELi"/>
 			<item value="context"/>
-			<item value="candidate"/>
 			<item value="delete"/>
 			<item value="saveor"/>
 			<item value="data"/>
@@ -18,13 +21,14 @@
 			<item value="Name"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="voter"/>
 			<item value="name"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="99"/>
-		<item key="DIALOG_Y_ORIGIN" value="39"/>
+		<item key="DIALOG_X_ORIGIN" value="782"/>
+		<item key="DIALOG_Y_ORIGIN" value="103"/>
 		<item key="DIALOG_WIDTH" value="335"/>
 		<item key="DIALOG_HEIGHT" value="432"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>

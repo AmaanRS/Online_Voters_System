@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/home/amaan/eclipse-workspace/pj1/.git\:
-GitRepositoriesView.GitDirectories.relative=pj1/.git\:
+GitRepositoriesView.GitDirectories=/home/amaan/eclipse-workspace/pj1/.git\:/home/amaan/eclipse-workspace/.git\:
+GitRepositoriesView.GitDirectories.relative=pj1/.git\:.git\:
 core_git_servers=
 eclipse.preferences.version=1

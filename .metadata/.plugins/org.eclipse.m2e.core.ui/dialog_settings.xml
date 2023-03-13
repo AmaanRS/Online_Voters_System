@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/amaan/eclipse-workspace/pj1"/>
 			<item value="/home/amaan/eclipse-workspace/springmvc"/>
 			<item value="/home/amaan/eclipse-workspace/orm"/>
 			<item value="/home/amaan/eclipse-workspace/springcore"/>
@@ -29,24 +30,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.spring.votersystem.pj1"/>
-			<item value="com.spring.mvc"/>
-			<item value="com.springcore.orm"/>
-			<item value="com.springcore."/>
-			<item value="com.springcore"/>
+			<item value="com.pj1new"/>
 		</list>
 		<list key="groupId">
-			<item value="com.spring.votersystem"/>
-			<item value="com.spring.mvc"/>
-			<item value="com.springcore.orm"/>
-			<item value="com.springcore."/>
-			<item value="com.springcore"/>
+			<item value="com.pj1new"/>
 		</list>
 		<list key="artifactId">
-			<item value="pj1"/>
-			<item value="springmvc"/>
-			<item value="orm"/>
-			<item value="springcore"/>
+			<item value="pj1new"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

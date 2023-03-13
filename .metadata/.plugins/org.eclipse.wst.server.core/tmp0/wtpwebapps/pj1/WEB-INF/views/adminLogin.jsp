@@ -3,41 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-function alertName(){
-alert("Id or Password is Incorrect");
-
-} 
-window.onload = alertName;
-</script> 
+<%@include file="./base.jsp"%>
 <meta charset="UTF-8">
 <title>Admin Login</title>
-    <style>
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-  
-        input[type=number] {
-            -moz-appearance: textfield;
-        }
-    </style>
 </head>
 <body>
-	<form class="px-4 py-3" action="/adminPage" method="post">
+	<form action="/dashboard" class="container mt-5 my-5" method="post">
 		<div class="form-group">
-			<label for="exampleDropdownFormEmail1">Id</label> <input
-				type="number" name="adminId" class="form-control"
-				id="exampleDropdownFormEmail1" placeholder="Enter Id" required="required">
+			<label for="adminId">Id</label> <input type="number"
+				class="form-control" id="adminId" name="adminId"
+				placeholder="Enter Id" required="required">
 		</div>
 		<div class="form-group">
-			<label for="exampleDropdownFormPassword1">Password</label> <input
-				type="password" class="form-control"
-				id="exampleDropdownFormPassword1" name="adminPassword"
+			<label for="adminPassword">Password</label> <input type="password"
+				class="form-control" id="adminPassword" name="adminPassword"
 				placeholder="Password" required="required">
 		</div>
-		<button type="submit" class="btn btn-primary">Sign in</button>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </body>
 </html>

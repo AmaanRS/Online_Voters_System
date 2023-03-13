@@ -1,8 +1,0 @@
-package pj1.Controller;
-
-@org.springframework.stereotype.Controller
-public class Controller {
-
-	
-	
-}
